@@ -1,2 +1,31 @@
 .git
+.gitignore
 .ipynb_checkpoints
+batch
+start_zoom.bat
+zoom.py
+.env
+mymod
+__pycache__
+team_3
+game
+foo.txt
+backup
+testfile
+chromedriver.exe
+chromedriver-win64
+chrome-win64
+.npm
+.local
+.jupyter
+.ipython
+.ipynb_checkpoints
+특강파일 !!
+my_life.txt
+학식챗봇.ipynb
+20250421 실습형문제(김은희)
+html
+dockerfile_data
+Zeppelin_files
+메모
+
