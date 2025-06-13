@@ -1,0 +1,28 @@
+html.json 들어가는 거 > vs code 왼쪽 아래 톱니바퀴 눌러서 코드조각 
+
+html 치고 들어가면 됨 !!
+
+
+>> "Print to console" 부터 주석 풀고 작성
+
+"Print to console " : {
+ "prefix" : "tt",
+ "body" : [
+	"<!DOCTYPE html>"
+	"<html lang =\ "ko\" xmlns:th=\"http: //www.thymeleaf.org\">"
+	"\t<head>",
+	"\t<meta charset =\"UTF-8\">",
+	"\t<meta name=\"viewport\" content =\"width=device-sidth, initial-scale=1.0\">",
+	"\t<title>Document</title>",
+	"\t</head>",
+	"\t\t<body>",
+	"\t\t$0",
+	"\t\t</body>",
+	"\t</html>"
+	],
+	"description" : "my thymeleaf settting" }
+  
+>> 안에 역슬래시를 쳐주는 것은 "가 가려지지 않게 하기 위함 !
+     저렇게 쳐주면 tt만 쳐줘도 저대로 형식이 그대로 나오게 되면서,
+     커서 위치는 $0에 가게 됨 (<body></body> 사이 !!)
+	

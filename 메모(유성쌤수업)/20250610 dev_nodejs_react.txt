@@ -1,0 +1,12 @@
+dev_nodejs_react 환경설정 중 !!!!
+
+CRA_react 폴더 만들고, 오른쪽 클릭 통합터미널 열기해서 npx create-react-app cra_01 명령어 입력 !!!
+
+이후 src 폴더에서 통합터미널 열어서 npm start 해주기
+
+App.test.js
+logo.svg
+reportWebvital.js   ; 나중에 이거 적힌 import랑 명령어도 index인가? app인가에서 지워주기 ~~
+setupTest.js
+
+는 지워도 됨 !!!

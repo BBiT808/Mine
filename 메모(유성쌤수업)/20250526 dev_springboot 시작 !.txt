@@ -1,0 +1,27 @@
+먼저 dockerfile_data 폴더 안에
+dev_springboot 폴더 만들고 시작하기 !!
+
+안에 .(반드시 온점 붙이기)devcontainer 폴더 만들고, 
+그 안에 Dockerfile이랑 devcontainer.json 파일 만들기!
+
+
+이후 https://star.spring.io에 들어가서
+maven - java -3.5.0
+
+com.pknu
+myspring
+myspring
+project for Spring Boot
+com.pknu.myspring
+
+jar
+17
+
+까지 선택한 후 generate
+
+이후 이걸 dev_springboot 폴더 안에 넣고 압축 풀기
+
+이후 vscode에 들어가서 새창 열기 - 편집기 dev_springboot로 열고
+
+폴더와 파일을 다 세팅한 후 왼쪽 아래의 원격 데스크톱 열기
+누른 후 컨테이너 다시 열기를 누른 후 진행 !!

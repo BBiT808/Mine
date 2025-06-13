@@ -1,0 +1,6 @@
+상위 폴더 my01에서 우클릭 누르고 New java package 누르고 sevice 로 제목 지정
+
+이후 service에 우클릭후 뉴 java file에서 class로 생성
+  >이름은 OpenAiService로 지정
+
+opeinai api key는 application properites에 적어놓기 !!! 

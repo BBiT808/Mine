@@ -1,0 +1,40 @@
+npm run build > 리액트를 jar 파일처럼 만드는 것 !
+npm run build -> dist 생김
+(assets 얻기 위함)
+
+스프링부트 켜
+확장에 Spring Initializr 있는지 확인해
+그다음 Ctrl+shift+p 눌러
+
+>실행 중인 확장 표시(그냥 확인)
+
+3.50
+자바
+com.pknu
+demo > my03
+
+root@667d8b6691c4:/workspaces/dev_springboot/sp_react/
+
+
+
+mvn clean package ; 만들어진 나머지 mvn jar 파일이 없어짐 !! 꼭 확인하고 실행할 것 !!
+# 추가 내용!! 
+<메이븐... 연결...? jar 파일 생성...?>
+myspring 폴더에서 우클릭 후 통합터미널 열기
+mvn clean package 실행
+jar 파일 우클릭 후 통합터미널 열기java -jar myspring_v1.jar   // java -jar 파일명   // jar로 빌드? 실행?하는 것
+
+
+pom > <version>0.0.1-SNAPSHOT</version> -> v1
+스냅샷 이름 바꾸고 
+target 폴더에 dist 추가
+그리고 target에서 터미널 열기 -> java -jar sp_react_v1.jar
+
+사이트 열리는지 확인
+
+그다음 sp_react에서 New_Java_Package 누르고  Controller 만들기
+
+컨트롤러 파일 확인 후 오른쪽 클릭 New Java file 파일 만들고 SpController 파일 만들기
+
+Spc 파일 안에다가 코드 넣고 상위 폴더 sp_react로 가서 mvn clean package 하고 
+dist 다시 옮기고 target에서 터미널 열기 후 jar 실행 

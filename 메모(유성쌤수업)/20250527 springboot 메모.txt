@@ -1,0 +1,47 @@
+▶ VS Code에서
+pom.xml에 아래 코드 입력 ( <dependencies> 안에)
+>>>>>>>>>>>>>>>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-devtools</artifactId>
+   <scope>runtime</scope>
+   <optional>true</optional>
+</dependency>
+<dependency>  
+<groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+   <scope>test</scope>
+</dependency>
+<<<<<<<<<<<<<<<
+저장 후 MyspringApplication.java 실행
+크롬 주소창에 localhost:8080 치고 연결되면 성공
+
+** 혹시 포트번호 바꾸고싶으면
+resources > application.properties 파일 안에
+server.port=포트번호(ex.18080) 입력
+
+myspring > main > resources 폴더 안에 static 폴더 생성
+그 안에 예시 html 파일 생성
+><에서 컨테이너 다시 열기
+MyspringApplication.java 실행 후 주소 접속하면 html 내용 뜸
+
+<메이븐... 연결...?>
+myspring 폴더에서 우클릭 후 통합터미널 열기
+mvn clean install 실행
+jar 파일 우클릭 후 통합터미널 열기
+la
+la -al
+java -jar myspring_v1.jar   // java -jar 파일명
+
