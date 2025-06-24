@@ -1,0 +1,80 @@
+20250622 VITE_react 만드는 법 다시 정리
+
+1) .devcontainer 에서 VITE_react 폴더 생성하기!!
+2) VITE_react 폴더에서 터미널열기
+3) vite react 시작 명령어 작성 ; npm create vite@latest (vite_01) > 괄호친게 파일 이름!
+     ; 나중에 칠때는 괄호 빼고 만들고 싶은 파일 이름만 넣기!!
+4) framework 중 React 선택 - variant 중 JavaScript 선택
+
+5) cd (파일이름) 해서 파일 이름 폴더로 들어간 후
+6) npm install 쳐서 설치하기'
+____________________________________________________ 여기까지가 일단 기본 설정
+
+7) 이후 package.json에 디버그 주석 밑에
+  dev : "vite" 되어 있는 것을 "vite --host" 로 수정!!
+8) src > App.jsx에서 return 안에 <></> 이외 다 삭제!
+     ; 여기선 div가 <></> 이거임!! 굳이 div 안 쳐도 된대!! ^_^
+
+9) 삭제한 후 App.jsx 위에 import reactLogo from './assets/react.svg'
+				   import viteLogo from '/vite.svg'  도 삭제!!
+     ; 불러올 필요가 없으니까 !!
+
+10) src > assets > react.svg 삭제 ; assets은 내장형 느낌??
+     public > vite.svg 도 삭제!! ; public은 대외적인 느낌?? 이라구 하네요~
+
+11) 먼저 홈페이지 띄우고 싶으면, src 폴더에 pages 폴더 만든 후
+     Home.jsx 파일 만들어주기! 
+     내용은 간단하게 
+    const Home = () => {
+    return (
+        <>
+            <h1> Portfolio Home페이지 입니당 ~ </h1>
+            <h2> 얏호.. 다시 만드는거 너무 신난다 ^_^. ..</h2>
+        </>
+    )
+}
+export default Home     ;  이런 식으로라도 상관 없음!
+
+12) 그리고!!! **main.jsx로 바꿔주는 것 잊지 말기!!
+  : 
+   // import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  // <StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  // </StrictMode >,
+)     ; 이런식으로 StrictMode를 없애주고 BrowserRouter로 감싸주기
+
+12`) react-router-dom을 쓰고 싶으면 통합터미널에서 npm i(install) react-router-dom
+      미리 쳐주기 !
+ 
+13) 이정도까지 마쳤으면, App.jsx로 돌아와서
+   :  import { useState } from 'react'
+import { Link, Routes, Route } from 'react-router-dom'
+import './App.css'
+import Home from './pages/Home'
+
+function App() {
+  return (
+    <>
+      <Link to="/">홈페이지</Link>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
+  )
+}
+
+export default App   ; 이런식으로 Link와 Routes와 Route를 쓰겠다고 import해주고
+ 밑의 return에 Link랑 Route path를 적어주자!!! 
+   ; 나중에 page 추가할 때 홈페이지에 띄우지 않더라고, 페이지끼리 연결하고 싶으면
+     여기 App의 Route에다 입력해줘야 다른 곳으로 연결이 됨 !!!
+
+ 
